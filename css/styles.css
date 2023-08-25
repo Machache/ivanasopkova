@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #333;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+}
+
+.nav-list li {
+    margin: 0 1%;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-size: 100%;
+}
+
+.ivana-sopkova{
+    text-align: center;
+}
+
+.welcome-picture{
+    max-width: 30%;
+    margin-right: 5%;
+
+}
+
+.welcome-div{
+    display: flex; /* Use flex display to align items */
+    align-items: center; /* Align items vertically */
+    margin: 10%;
+}
+
+.welcome-cite{
+    margin: 5%;
+    text-align: center;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+}
+.contact-text{
+    margin-top: -4px;
+}
+
+.courses-img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.25rem;
+}
+.row-box{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+}
+.image-container{
+    max-width: 50%;
+}
+.content-container{
+    padding-left: 15px;
+    padding-top:5px;
+}
+@media (max-width: 768px) {
+    .row-box {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Change to a column layout for mobile */
+    }
+
+    .image-container {
+        order: 1;
+        width: 100%;
+        max-width: 100%/* Move image container below content for mobile */
+    }
+
+    .content-container {
+        order: 2;
+        width: 100%/* Move content container above image for mobile */
+    }
+
+    /* Adjust text size */
+    .content-container h3 {
+        font-size: 1rem; /* Adjust the font size as needed */
+    }
+
+    .content-container h4 {
+        font-size: 1rem; /* Adjust the font size as needed */
+    }
+
+    /* Stretch the image */
+    .courses-img {
+        width: 100%; /* Make the image width 100% to stretch it */
+        height: auto;
+    }
+}
