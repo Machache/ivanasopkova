@@ -62,15 +62,22 @@ body {
 .row-box{
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-
+    align-items: center; /* Align items vertically center */
+    justify-content: center;
 }
 .image-container{
     max-width: 50%;
 }
 .content-container{
-    padding-left: 15px;
-    padding-top:5px;
+    height: 100%;
+    flex: 1;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: red;
+
 }
 @media (max-width: 768px) {
     .row-box {
@@ -87,16 +94,20 @@ body {
 
     .content-container {
         order: 2;
-        width: 100%/* Move content container above image for mobile */
+        width: 100%;
+        text-align: center;
+       /* Move content container above image for mobile */
     }
 
     /* Adjust text size */
     .content-container h3 {
-        font-size: 1rem; /* Adjust the font size as needed */
+        font-size: 1rem;
+        text-align: center;/* Adjust the font size as needed */
     }
 
     .content-container h4 {
-        font-size: 1rem; /* Adjust the font size as needed */
+        font-size: 1rem;
+        text-align: center;/* Adjust the font size as needed */
     }
 
     /* Stretch the image */
